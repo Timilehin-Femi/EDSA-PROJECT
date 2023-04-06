@@ -1,0 +1,375 @@
+* {
+    box-shadow: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-rows: auto; */
+    justify-self: center;
+    min-height: 100vh;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+}
+
+.body-background {
+    background-color: cornsilk;
+}
+
+header {
+    margin: 0;
+    padding: 0px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* display:flex; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* 
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+} */
+
+
+.header {
+    background-color: rgb(20, 173, 173);
+    height: 100px;
+    padding: 0px 0px;
+    margin: 0px;
+    /* overflow-x: visible; */
+}
+
+.header .flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header a {
+    color: rgb(12, 11, 11);
+    padding: 8px;
+    margin: 10px 0px;
+
+
+}
+
+.header a:hover {
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.header .logo-container:hover {
+    cursor: grab;
+}
+
+.header .logo-container {
+    display: grid;
+    grid-template-rows: 60%, 40%;
+    justify-items: right;
+    padding-left: 20px;
+
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 250;
+    line-height: 1.2;
+}
+
+
+section {
+    position: relative;
+    padding-top: 20px;
+    /* padding-left: 350px; */
+    max-width: 100%;
+    width: 500px;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+    /* padding: 10px; */
+    max-width: 100%;
+    margin-top: 100px
+}
+
+.form-section .Appointment {
+    border-style: none;
+    border-radius: 6px;
+    display: grid;
+    grid-template-rows: auto;
+    place-content: center;
+    background-color: rgb(20, 173, 173);
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.5);
+    align-content: center;
+    text-align: center;
+    justify-self: center;
+    margin: 10px;
+
+
+
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 12px 15px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+    /* place-items: center; */
+
+}
+
+.label {
+    font-size: 25px;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+.form input {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.form-title h2 {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.form form {
+    line-height: 3;
+    display: grid;
+    grid-template-rows: auto;
+
+}
+
+
+.Appointment {
+    background-color: rgb(20, 173, 173);
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.5);
+    width: 500px;
+    padding: 4px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+
+}
+
+/* Responsive layout - making the webpage mobile friendly */
+
+@media screen and (max-width: 414px) {
+
+
+    header {
+        margin: 0;
+        padding: 0px 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* display:flex; */
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .header {
+        background-color: rgb(20, 173, 173);
+        height: 70px;
+        padding: 0px 0px;
+    }
+
+
+    .header .flexed {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header ul {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        margin: 8px 0px 4px 50px;
+    }
+
+    .header a {
+        color: rgb(3, 3, 3);
+        padding: 8px;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 11px;
+    }
+
+    .header .logo-container {
+        display: grid;
+        grid-template-rows: 70%, 30%;
+        justify-items: right;
+        margin: 0px 20px 0px 0px
+    }
+
+    .header h1 {
+        font-size: 20px;
+        font-weight: 150;
+        line-height: 1;
+    }
+
+    .header p {
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        /* grid-template-rows: auto; */
+        justify-self: center;
+        min-height: 100vh;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+
+    }
+
+    section {
+        padding-top: 15px;
+        max-width: 100%;
+        width: 300px;
+        position: relative;
+        /* padding-top: 20px;  */
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
+        text-align: center;
+        margin-top: 70px
+    }
+
+    .form-section .Appointment {
+        border-style: none;
+        border-radius: 6px;
+        display: grid;
+        grid-template-rows: auto;
+        place-content: center;
+        background-color: rgb(20, 173, 173);
+        box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.5);
+        align-content: center;
+        text-align: center;
+        justify-self: center;
+        margin: 10px;
+
+
+
+    }
+
+
+    .Appointment {
+        background-color: rgb(20, 173, 173);
+        box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.5);
+        width: 250px;
+        padding: 5px;
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+
+    }
+
+}
+
+
+.btn {
+    border-radius: 6px;
+    padding: 6px 8px;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    /* margin-left: 10px; */
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+
+
+}
+
+.label {
+    font-size: 18px;
+    margin-top: 11px;
+    line-height: 15px;
+}
+
+.form input {
+    padding: 2px;
+    font-size: 11px;
+    border-radius: 2px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.form-title h2 {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.form form {
+    line-height: 1;
+    display: grid;
+    grid-template-rows: auto;
+
+}
+
+
+@media screen and (max-width: 360px) {
+    section {
+        padding-top: 20px;
+        /* padding-left: 35px; */
+        max-width: 100%;
+        width: 250px;
+    }
+}
+
+
+
+
+
+
